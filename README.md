@@ -7,7 +7,7 @@ It leverages modern Azure services to enable secure, automated ETL and interacti
 
 ## 🖼️ Architecture Overview
 
-![Screenshot 2025-04-03 at 8 43 15 AM](https://github.com/user-attachments/assets/66ce4d65-67f7-4d8b-9eb9-2f1db9bdd5ea)
+![image](https://github.com/user-attachments/assets/1aaa7fa9-6e67-4b8c-bd1c-5b5d01af28db)
 
 
 
