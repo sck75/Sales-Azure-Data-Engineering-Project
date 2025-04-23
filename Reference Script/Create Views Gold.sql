@@ -1,31 +1,26 @@
-------------------------
--- CREATE VIEW CALENDAR
-------------------------
-CREATE VIEW gold.calendar
+Create View gold.calendar
 AS
-SELECT 
-    * 
-FROM 
-    OPENROWSET
-        (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Calendar/',
-            FORMAT = 'PARQUET'
-        ) as QUER1
-
+SELECT
+   *
+FROM
+   OPENROWSET(
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Calendar/',
+            FORMAT = 'parquet'
+   ) as quer1
 
 ------------------------
 -- CREATE VIEW CUSTOMERS
 ------------------------
-CREATE VIEW gold.customers
+Create View gold.customers
 AS
 SELECT 
     * 
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Customers/',
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Customers/',
             FORMAT = 'PARQUET'
-        ) as QUER1
+        ) as QUER2
 
 
 
@@ -39,9 +34,9 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Products/',
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Products/',
             FORMAT = 'PARQUET'
-        ) as QUER1
+        ) as QUER3
 
 
 ------------------------
@@ -54,27 +49,13 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Returns/',
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Returns/',
             FORMAT = 'PARQUET'
-        ) as QUER1
+        ) as QUER4
         
 
-------------------------
--- CREATE VIEW RETURNS
-------------------------
-CREATE VIEW gold.returns
-AS
-SELECT 
-    * 
-FROM 
-    OPENROWSET
-        (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Returns/',
-            FORMAT = 'PARQUET'
-        ) as QUER1
 
-
-    ------------------------
+------------------------
 -- CREATE VIEW SALES
 ------------------------
 CREATE VIEW gold.sales
@@ -84,9 +65,9 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Sales/',
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Sales/',
             FORMAT = 'PARQUET'
-        ) as QUER1
+        ) as QUER5
 
 
 ------------------------
@@ -99,9 +80,9 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_SUbCategories/',
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Subcategories/',
             FORMAT = 'PARQUET'
-        ) as QUER1
+        ) as QUER6
 
 
 
@@ -115,8 +96,6 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Territories/',
+            BULK 'https://advwstorage.dfs.core.windows.net/silver/AdventureWorks_Territories/',
             FORMAT = 'PARQUET'
-        ) as QUER1
-
-
+        ) as QUER7
