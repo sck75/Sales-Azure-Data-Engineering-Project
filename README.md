@@ -1,4 +1,4 @@
-# Azure Sales Analytics Pipeline 🚀
+# Sales Data Engineering Project 🚀
 
 This project implements an end-to-end scalable data engineering solution using the **Medallion Architecture** (Bronze, Silver, Gold) with **AdventureWorks Sales Data** on Azure. 
 It leverages modern Azure services to enable secure, automated ETL and interactive analytics via Power BI.
@@ -7,7 +7,8 @@ It leverages modern Azure services to enable secure, automated ETL and interacti
 
 ## 🖼️ Architecture Overview
 
-![Azure Medallion Architecture](./b2f1e0e1-97c6-47c5-b33c-2b0ac8e4df01.png)
+![Screenshot 2025-04-03 at 8 43 15 AM](https://github.com/user-attachments/assets/66ce4d65-67f7-4d8b-9eb9-2f1db9bdd5ea)
+
 
 
 ---
